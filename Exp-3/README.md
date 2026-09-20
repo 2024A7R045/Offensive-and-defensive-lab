@@ -4,6 +4,13 @@
 
 To perform basic network traffic capture and analysis during an FTP session from Kali Linux to a target system using Wireshark.
 
+## Theory
+
+Wireshark is a network packet analyzer used to capture and inspect traffic flowing through a network. It helps in understanding how data is transmitted between devices and in identifying sensitive information exposed in transit.
+
+FTP is a file transfer protocol that sends login credentials and file data in plain text unless protected by encryption. Because of this, attackers can use packet sniffing tools to capture and read user details such as usernames and passwords.
+
+TCP divides data into packets and reassembles them at the receiver. Wireshark can follow a TCP stream to reconstruct the complete communication and reveal the actual contents of the session.
 
 ## Procedure
 
